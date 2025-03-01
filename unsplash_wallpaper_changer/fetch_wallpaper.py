@@ -11,8 +11,8 @@ logging.basicConfig(
     handlers=[logging.StreamHandler()]
 )
 
-# Unsplash API credentials
-UNSPLASH_ACCESS_KEY = 'lgizRXGzlGoKBOp-8tHryeH77jfow0oZ5N-jwAIwSns'
+# Paste your Unsplash API credentials below
+UNSPLASH_ACCESS_KEY = ''
 
 # Directory to save the downloaded wallpaper (relative path)
 DOWNLOAD_DIRECTORY = os.path.join(os.path.dirname(__file__), 'downloads')
@@ -159,6 +159,8 @@ def main(search_query=None, collection_id=None):
 # Run the main function
 if __name__ == "__main__":
     # Example usage
-    search_query = 'monochrome'  # Change this value to search for specific wallpapers or leave empty for random
-    collection_id = ''  # Change this value to fetch from a specific collection or leave as None monochrome: '400620'
+    # Change this value to search for specific wallpapers or leave empty for random
+    search_query = 'monochrome'
+    # Change this value to fetch from a specific collection or leave as None monochrome: '400620'
+    collection_id = ''  
     main(search_query=search_query, collection_id=collection_id)
